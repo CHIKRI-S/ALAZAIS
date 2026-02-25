@@ -6,9 +6,7 @@
 h1 {
     text-align: center;
 }
-.description1 {
-    font-family: Inter, system-ui, sans-serif
-}
+
 body {
   background-color: #040506;
   color: aliceblue;
@@ -17,10 +15,5 @@ body {
 
 p {
   text-align: center;
-}
-
-.motto1 {
-  font-family: Inter, system-ui, sans-serif;
-  color: #ffffff;
 }
 
