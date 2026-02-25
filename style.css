@@ -1,6 +1,16 @@
 .titre {
-  font-family: Courier;
+  font-family: Inter, system-ui, sans-serif
+}
+.titre {
+  color: #FCB101;
+}
+h1 {
+    text-align: center;
 }
 .description1 {
-    font-family: monospace;
+    font-family: Inter, system-ui, sans-serif
+}
+body {
+  background-color: #040506;
+  color:aliceblue
 }
