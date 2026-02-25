@@ -1,5 +1,10 @@
-.titre {
+body {
+  background-color: #040506;
+  color: aliceblue;
   font-family: Inter, system-ui, sans-serif;
+}
+
+.titre {
   color: #FCB101;
 }
 
@@ -7,13 +12,12 @@ h1 {
     text-align: center;
 }
 
-body {
-  background-color: #040506;
-  color: aliceblue;
-  font-family: Inter, system-ui, sans-serif;
-}
 
 p {
   text-align: center;
 }
 
+.motto1 {
+    font-family: Inter, system-ui, sans-serif;
+    text-align: center;
+}
