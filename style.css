@@ -1,9 +1,8 @@
 .titre {
-  font-family: Inter, system-ui, sans-serif
-}
-.titre {
+  font-family: Inter, system-ui, sans-serif;
   color: #FCB101;
 }
+
 h1 {
     text-align: center;
 }
@@ -12,9 +11,15 @@ h1 {
 }
 body {
   background-color: #040506;
-  color:aliceblue
+  color: aliceblue;
+  font-family: Inter, system-ui, sans-serif;
 }
 
 p {
   text-align: center;
+}
+
+.motto1 {
+  font-family: Inter, system-ui, sans-serif;
+  color: #ffffff;
 }
