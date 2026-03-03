@@ -70,8 +70,8 @@ h1 {
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 1000;
-  background: rgba(11, 15, 20, 0.85);
-  border-bottom: 1px solid #232C38;
+  background: #040506;
+  border-bottom: 1px solid #474747;
   backdrop-filter: blur(10px);
   transform: translateY(0);
   transition: transform 220ms ease;
