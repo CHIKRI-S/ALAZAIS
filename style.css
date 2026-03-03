@@ -115,10 +115,11 @@ h1 {
 
 .topbar-nav a:hover{
   color: #E8EEF2;
-  background: rgba(255,255,255,0.04);
+  background: #040506;
 }
 
 /* Important: pour éviter que le header cache le contenu */
 .container{
   padding-top: 90px; /* ajuste si ton header est plus grand */
 }
+
