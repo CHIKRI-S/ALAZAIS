@@ -6,6 +6,7 @@ body {
 
 .titre {
   color: #FCB101;
+  letter-spacing: 6px;
 }
 
 h1 {
@@ -122,4 +123,5 @@ h1 {
 .container{
   padding-top: 90px; /* ajuste si ton header est plus grand */
 }
+
 
