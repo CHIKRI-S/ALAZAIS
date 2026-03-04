@@ -105,7 +105,7 @@ h1 {
 }
 
 .topbar-logo {
-    height: 72px;
+    height: 35px;
     width: auto;
 }
 
@@ -119,3 +119,4 @@ h1 {
 .container{
   padding-top: 90px; /* ajuste si ton header est plus grand */
 }
+
