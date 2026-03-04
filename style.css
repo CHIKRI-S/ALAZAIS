@@ -53,6 +53,7 @@ h1 {
 .quote1 {
     font-style : italic;
     color: #FCB101;
+
 }
 
 
@@ -102,6 +103,12 @@ h1 {
   padding: 8px 10px;
   border-radius: 10px;
 }
+
+.topbar-logo {
+    height: 72px;
+    width: auto;
+}
+
 
 .topbar-nav a:hover{
   color: #E8EEF2;
