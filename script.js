@@ -4,13 +4,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let lastY = window.scrollY;
 
-  const HIDE_AFTER = 80;     // ne pas cacher avant 80px
-  const SHOW_DELTA = 40;     // il faut remonter d'au moins 40px pour réafficher
-  const HIDE_DELTA = 10;     // micro-seuil pour cacher quand on descend
+  const HIDE_AFTER = 80;
+  const SHOW_DELTA = 40;
+  const HIDE_DELTA = 10;
 
   let hidden = false;
-  let lastShowY = lastY;     // position où la barre a été montrée
-  let lastHideY = lastY;     // position où la barre a été cachée
+  let lastShowY = lastY;
+  let lastHideY = lastY;
 
   function hide() {
     if (!hidden) {
@@ -31,7 +31,6 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("scroll", () => {
     const y = window.scrollY;
 
-    // Si on est tout en haut, on montre toujours
     if (y <= 10) {
       show();
       lastY = y;
@@ -39,12 +38,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (y > lastY) {
-      // on descend
       if (y > HIDE_AFTER && (y - lastHideY) > HIDE_DELTA) {
         hide();
       }
     } else if (y < lastY) {
-      // on remonte : on ne montre QUE si on a vraiment remonté
       if ((lastY - y) > SHOW_DELTA) {
         show();
       }
@@ -52,4 +49,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     lastY = y;
   }, { passive: true });
+
+  // ← HAMBURGER ICI DANS LE DOMCONTENTLOADED
+  const hamburger = document.getElementById('hamburger');
+  const nav = document.getElementById('topbar-nav');
+
+  if (hamburger && nav) {
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('is-open');
+    });
+  }
 });
+
