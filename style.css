@@ -1,63 +1,34 @@
+/* =====================
+   BASE
+   ===================== */
+
 body {
   background-color: #040506;
   color: aliceblue;
   font-family: Inter, system-ui, sans-serif;
 }
 
-.titre {
-  color: #FCB101;
-  letter-spacing: 6px;
+h1 {
+  text-align: center;
 }
 
-h1 {
-    text-align: center;
-}
+/* =====================
+   LAYOUT
+   ===================== */
 
 .container {
   max-width: 980px;
   margin: 0 auto;
   padding: 48px 18px;
-  text-align: center; /* centre titres + textes courts */
+  padding-top: 90px;
+  text-align: center;
 }
 
-.description1 {
-  text-align: justify;
-    max-width: 800px;
-    margin: auto;
-    line-height: 1.6;
-}
+/* =====================
+   TOPBAR
+   ===================== */
 
-.motto1 {
-    font-family: Inter, system-ui, sans-serif;
-    text-align: center;
-    font-weight: 400;
-}
-
-
-.card {
-    background-color: #040506;
-    border: 1px solid #474747;
-    border-radius: 12px;
-    padding: 20px;
-    color: #ccc;
-    margin: 20px auto;
-    max-width: 700px;
-}
-
-.card p {
-  margin: 10px 0;
-  text-align: left;
-  line-height: 1.6;
-} 
-
-.quote1 {
-    font-style : italic;
-    color: #FCB101;
-
-}
-
-
-.topbar{
+.topbar {
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 1000;
@@ -65,14 +36,14 @@ h1 {
   border-bottom: 1px solid #474747;
   backdrop-filter: blur(10px);
   transform: translateY(0);
-  transition:  transform 220ms ease;
+  transition: transform 220ms ease;
 }
 
-.topbar.is-hidden{
+.topbar.is-hidden {
   transform: translateY(-100%);
 }
 
-.topbar-inner{
+.topbar-inner {
   max-width: 980px;
   margin: 0 auto;
   padding: 14px 18px;
@@ -82,19 +53,57 @@ h1 {
   gap: 16px;
 }
 
-.topbar-title{
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: #E8EEF2;
+  border-radius: 2px;
+}
+
+.topbar-logo {
+  height: 35px;
+  width: auto;
+}
+
+.topbar-title {
   color: #FCB101;
   letter-spacing: 6px;
   font-weight: 600;
   text-transform: uppercase;
 }
 
-.topbar-nav{
-  display: flex;
+/* ← MODIFIÉ */
+.topbar-nav {
+  display: none;
   gap: 14px;
 }
 
-.topbar-nav a{
+/* ← AJOUTÉ */
+.topbar-nav.is-open {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #040506;
+  border-bottom: 1px solid #474747;
+  padding: 14px 18px;
+  gap: 4px;
+}
+
+.topbar-nav a {
   color: #7A8793;
   text-decoration: none;
   font-size: 13px;
@@ -104,19 +113,57 @@ h1 {
   border-radius: 10px;
 }
 
-.topbar-logo {
-    height: 35px;
-    width: auto;
-}
-
-
-.topbar-nav a:hover{
+.topbar-nav a:hover {
   color: #E8EEF2;
   background: #040506;
 }
 
-/* Important: pour éviter que le header cache le contenu */
-.container{
-  padding-top: 90px; /* ajuste si ton header est plus grand */
+/* =====================
+   TYPOGRAPHIE
+   ===================== */
+
+.titre {
+  color: #FCB101;
+  letter-spacing: 6px;
 }
 
+.motto1 {
+  text-align: center;
+  font-weight: 400;
+}
+
+.quote1 {
+  font-style: italic;
+  color: #FCB101;
+}
+
+/* =====================
+   CARDS
+   ===================== */
+
+.card {
+  background-color: #040506;
+  border: 1px solid #474747;
+  border-radius: 12px;
+  padding: 20px;
+  color: #ccc;
+  margin: 20px auto;
+  max-width: 700px;
+}
+
+.card p {
+  margin: 10px 0;
+  text-align: left;
+  line-height: 1.6;
+}
+
+/* =====================
+   TEXTES / DESCRIPTIONS
+   ===================== */
+
+.description1 {
+  text-align: justify;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
+}
