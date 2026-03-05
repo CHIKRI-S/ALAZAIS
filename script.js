@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
     data: {
       labels: ['1920','1930','1940','1950','1960','1980','2000','2015','2026'],
       datasets: [{
-        label: "Univers découverts",
+        label: "Discovered Universes",
         data: [1,47,820,4320,9876,312540,8420115,243910554,1400200000],
         borderColor: "#ECFD18",
         backgroundColor: "rgba(236,253,24,0.2)",
