@@ -146,7 +146,7 @@ h1 {
   border: 1px solid #474747;
   border-radius: 12px;
   padding: 20px;
-  color: #ccc;
+  color: #E8EEF2;
   margin: 20px auto;
   max-width: 700px;
 }
@@ -166,14 +166,26 @@ h1 {
   max-width: 800px;
   margin: auto;
   line-height: 1.6;
+  color: #E8EEF2;
 }
 
+
 /* =====================
+   Universes page
+
+   ===================== */
+
+
+    /* =====================
    CHARTS CONTAINER
    ===================== */
-.chart-container{
-  width: 100%;
-  max-width: 900px;
-  height: 450px;
-  margin: 0 auto;
-}
+    .chart-container{
+      width: 100%;
+      max-width: 900px;
+      height: 450px;
+      margin: 0 auto;
+    }
+
+    .UNIWLCM {
+      color: #E8EEF2;
+    }
