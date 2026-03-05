@@ -173,8 +173,7 @@ h1 {
    ===================== */
 
 .chart-container {
-  width: 100%;
-  max-width: 900px;
+  width: 900px;
   height: 450px;
 }
 
