@@ -90,7 +90,11 @@ new Chart(ctx, {
     }]
   },
   options: {
-  responsive: true,
-  maintainAspectRatio: false
-}
+    responsive: true,
+    plugins: {
+      tooltip: {
+        enabled: true
+      }
+    }
+  }
 });
