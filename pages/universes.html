@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta essentiels -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>Agency — Alazaïs</title>
+
+    <!-- COMMENTAIRE: tu peux garder ta description OG/SEO ici si tu veux,
+         mais idéalement tu changes title/description par page (sinon Google voit tout pareil). -->
+    <meta name="description" content="The Alazaïs Agency is an inter-universal organization responsible for the discovery, exploration, and colonization of derived universes.">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="Alazais, agency, inter-universal, exploration, universe, colonization">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Alazaïs Agency">
+    <meta property="og:description" content="Explore. Understand. Preserve.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alazais.com/pages/agency.html">
+    <meta property="og:image" content="https://alazais.com/logo.svg">
+
+    <!-- Favicon -->
+    <!-- COMMENTAIRE: surtout ici, si tu mets "assets/..." ça casse, car tu es dans /pages -->
+    <link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS global -->
+    <!-- COMMENTAIRE: /style.css marche depuis /pages sans aucun ../ -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6W8TCW8LJC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6W8TCW8LJC');
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+
+  <body>
+       <header class="topbar" id="topbar">
+  <div class="topbar-inner">
+
+    <button class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="topbar-center">
+      <div class="topbar-title">ALAZAÏS</div>
+      <div class="topbar-motto" translate="no" lang="en">Explore. Understand. Preserve.</div>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="topbar-logo">
+      <circle cx="256" cy="256" r="256" fill="#040506"/>
+      <circle cx="256" cy="256" r="170" fill="none" stroke="#FCB101" stroke-width="12"/>
+      <polygon points="256,86 403,341 109,341"
+               fill="none" stroke="#FCB101" stroke-width="12" stroke-linejoin="round"/>
+    </svg>
+
+    <nav class="topbar-nav" id="topbar-nav">
+      <a href="/index.html">Home</a>
+      <a href="/pages/agency.html">Agency</a>
+      <a href="/pages/missions.html">Missions</a>
+      <a href="/pages/universes.html">Universes</a>
+      <a href="/pages/departments.html">Departments</a>
+      <a href="/pages/archives.html">Archives</a>
+      <a href="/pages/aboutt.html">About</a>
+    </nav>
+
+  </div>
+</header>
+
+    <main class="container">
+      <h1 style="text-align: center;" class="titre">UNIVERSES</h1>
+      <h3 style="text-align: center;" class="motto1">Worlds registry and discovery metrics</h3>
+    <div class="card">
+      <h2 style="text-align: center;" class="UNIWLCM">Welcome to the Universes page</h2>
+    </div>
+      <h4 style="text-align: center;" class="question">Do you know that the number of known universes is constantly increasing?</h4>
+      <p style="text-align: justify;" class="text">Indeed, to date, the Agency has discovered over 1,400,200,000 universes, and this number continues to grow as we expand our exploration efforts.</p> 
+ 
+      <div class="chart-container"> 
+         <canvas id="universChart"></canvas>
+      </div>
+    
+      <p style="text-align: justify;" class="text">The Department of Worlds Exploration compiles a list of these universes as they are discovered. 
+    It first records our bases and the planets on which they are located. 
+    It should be noted, first and foremost, that the Agency does not operate across all derived universes, due to limited human and material resources. 
+    The Agency’s primary objective within these universes is the study of civilizations—or the remnants of civilizations—discovered on certain planets or satellites scattered among the billions of galaxies within these universes.</p>
+      <!-- Ton contenu Universes ici -->
+    </main>
+
+    <!-- COMMENTAIRE: il faut aussi charger ton JS sur les pages /pages, sinon le menu hamburger peut ne pas marcher -->
+    <script src="/script.js"></script>
+  </body>
+</html>

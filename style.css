@@ -1,0 +1,215 @@
+/* =====================
+   BASE
+   ===================== */
+
+body {
+  background-color: #040506;
+  color: aliceblue;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* =====================
+   LAYOUT
+   ===================== */
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 48px 18px;
+  padding-top: 90px;
+  text-align: center;
+}
+
+/* =====================
+   TOPBAR
+   ===================== */
+
+/* =====================
+   TOPBAR
+   ===================== */
+
+.topbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  background: #040506;
+  border-bottom: 1px solid #474747;
+  backdrop-filter: blur(10px);
+  transform: translateY(0);
+  transition: transform 220ms ease;
+}
+
+.topbar.is-hidden {
+  transform: translateY(-100%);
+}
+
+.topbar-inner {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 10px 18px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 16px;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: #E8EEF2;
+  border-radius: 2px;
+}
+
+.topbar-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.topbar-title {
+  color: #FCB101;
+  letter-spacing: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.topbar-motto {
+  color: #E8EEF2;
+  font-size: 11px;
+  letter-spacing: 1px;
+  
+}
+
+.topbar-logo {
+  width: 36px;
+  height: 36px;
+  animation: rotation 7s linear infinite;
+  flex-shrink: 0;
+}
+
+@keyframes rotation {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.topbar-nav {
+  display: none;
+}
+
+.topbar-nav.is-open {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #040506;
+  border-bottom: 1px solid #474747;
+  padding: 14px 18px;
+  gap: 4px;
+}
+
+.topbar-nav a {
+  color: #E8EEF2;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+
+.topbar-nav a:hover {
+  background: #1a1a1a;
+}
+
+/* =====================
+   TYPOGRAPHIE
+   ===================== */
+
+.titre {
+  color: #FCB101;
+  letter-spacing: 6px;
+}
+
+.motto1 {
+  text-align: center;
+  font-weight: 400;
+}
+
+.quote1 {
+  font-style: italic;
+  color: #FCB101;
+}
+
+/* =====================
+   CARDS
+   ===================== */
+
+.card {
+  background-color: #040506;
+  border: 1px solid #474747;
+  border-radius: 12px;
+  padding: 20px;
+  color: #E8EEF2;
+  margin: 20px auto;
+  max-width: 700px;
+}
+
+.card p {
+  margin: 10px 0;
+  text-align: left;
+  line-height: 1.6;
+}
+
+/* =====================
+   TEXTES / DESCRIPTIONS
+   ===================== */
+
+.description1 {
+  text-align: justify;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
+  color: #E8EEF2;
+}
+
+
+/* =====================
+   Universes page
+
+   ===================== */
+
+
+    /* =====================
+   CHARTS CONTAINER
+   ===================== */
+    .chart-container{
+      width: 100%;
+      max-width: 900px;
+      height: 450px;
+      margin: 0 auto;
+    }
+
+    .UNIWLCM {
+      color: #E8EEF2;
+    }
+
+
