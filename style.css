@@ -88,6 +88,10 @@ h1 {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+@-webkit-keyframes rotation {
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); }
+}
 .topbar-logo {
 
   margin-left: -70px; /* décale d'un certain nombre de pixels */
@@ -207,4 +211,5 @@ h1 {
     .UNIWLCM {
       color: #E8EEF2;
     }
+
 
