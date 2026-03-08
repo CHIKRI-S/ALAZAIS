@@ -212,4 +212,10 @@ h1 {
       color: #E8EEF2;
     }
 
+hr {
+    border: none;
+    border-top: 1px solid #FCB101; /* couleur et épaisseur */
+    width: 80%;                     /* largeur */
+    margin: 40px auto;              /* espacement centré */
+}
 
