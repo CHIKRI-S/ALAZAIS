@@ -75,12 +75,12 @@ h1 {
 /*TOPBAR LOGO*/
 
 .topbar-logo {
-  height: 35px;
+  height: 20px;
   width: auto;
 }
 .topbar-logo {
   width: 100%;
-  max-width: 50px; /* ou la taille que vous voulez */
+  max-width: 40px; /* ou la taille que vous voulez */
   height: auto;
   animation: rotation 7s linear infinite;
 }
@@ -214,6 +214,7 @@ h1 {
     .UNIWLCM {
       color: #E8EEF2;
     }
+
 
 
 
