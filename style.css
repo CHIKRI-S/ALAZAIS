@@ -82,7 +82,7 @@ h1 {
   width: 100%;
   max-width: 50px; /* ou la taille que vous voulez */
   height: auto;
-  animation: rotation 3s linear infinite;
+  animation: rotation 7s linear infinite;
 }
 @keyframes rotation {
   from { transform: rotate(0deg); }
@@ -93,9 +93,12 @@ h1 {
   to { -webkit-transform: rotate(360deg); }
 }
 .topbar-logo {
-
-  margin-left: -70px; /* décale d'un certain nombre de pixels */
+  margin-left: auto;
+  margin-right: auto;
+  /* ou */
+  position: relative; /* au lieu de absolute si c'est le cas */
 }
+
 
 
 .topbar-title {
@@ -211,5 +214,6 @@ h1 {
     .UNIWLCM {
       color: #E8EEF2;
     }
+
 
 
