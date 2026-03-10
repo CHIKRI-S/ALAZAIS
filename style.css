@@ -154,6 +154,7 @@ h1 {
   font-weight: 400;
 }
 
+
 .quote1 {
   font-style: italic;
   color: #FCB101;
@@ -177,6 +178,13 @@ h1 {
   margin: 10px 0;
   text-align: left;
   line-height: 1.6;
+}
+
+.cardmotto {
+  border-color: #FCB101;
+}
+.cardinfo {
+  border-color: #48ff00;
 }
 
 /* =====================
@@ -212,4 +220,48 @@ h1 {
       color: #E8EEF2;
     }
 
+hr {
+    border: none;
+    border-top: 1px solid #FCB101; /* couleur et épaisseur */
+    width: 80%;                     /* largeur */
+    margin: 40px auto;              /* espacement centré */
+}
 
+.warningcard {
+  color: #FF0000;
+  border-color: #FF0000;
+}
+
+a {
+  color: #FCB101;
+}
+
+a:visited {
+  color: #d89a00;
+}
+
+a:hover {
+  color: #E8EEF2;
+}
+
+a:active {
+  color: #E8EEF2;
+}
+
+.info {
+  color: #48ff00;
+}
+
+button {
+  background-color: #040506;
+  border: 1px solid #474747;
+  border-radius: 12px;
+  padding: 20px;
+  color: #E8EEF2;
+  margin: 20px auto;
+  max-width: 700px;
+}
+
+.button_index {
+  color: #E8EEF2;
+}
