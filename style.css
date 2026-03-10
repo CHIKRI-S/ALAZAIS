@@ -226,6 +226,34 @@ hr {
     width: 80%;                     /* largeur */
     margin: 40px auto;              /* espacement centré */
 }
+<<<<<<< HEAD
+=======
+
+.warningcard {
+  color: #FF0000;
+  border-color: #FF0000;
+}
+
+a {
+  color: #FCB101;
+}
+
+a:visited {
+  color: #d89a00;
+}
+
+a:hover {
+  color: #E8EEF2;
+}
+
+a:active {
+  color: #E8EEF2;
+}
+
+.info {
+  color: #48ff00;
+}
+>>>>>>> 3e422011b37e053b1cdecb3a801858c46c90da5d
 
 .warningcard {
   color: #FF0000;
