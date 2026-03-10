@@ -234,6 +234,7 @@ hr {
 
 a {
   color: #FCB101;
+  text-decoration: none;
 }
 
 a:visited {
