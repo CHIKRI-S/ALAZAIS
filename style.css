@@ -265,3 +265,17 @@ button {
 .button_index {
   color: #E8EEF2;
 }
+.linkscp {
+  color: #E8EEF2;
+  text-decoration: none;
+}
+
+.linkscp:visited {
+  color: #E8EEF2;
+}
+.linkscp:hover {
+  color: #E8EEF2;
+}
+.linkscp:active {
+  color: #E8EEF2;
+}
