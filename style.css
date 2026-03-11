@@ -1,34 +1,4 @@
 /* =====================
-   BASE
-   ===================== */
-
-body {
-  background-color: #040506;
-  color: aliceblue;
-  font-family: Inter, system-ui, sans-serif;
-}
-
-h1 {
-  text-align: center;
-}
-
-/* =====================
-   LAYOUT
-   ===================== */
-
-.container {
-  max-width: 980px;
-  margin: 0 auto;
-  padding: 48px 18px;
-  padding-top: 90px;
-  text-align: center;
-}
-
-/* =====================
-   TOPBAR
-   ===================== */
-
-/* =====================
    TOPBAR
    ===================== */
 
@@ -94,7 +64,6 @@ h1 {
   color: #E8EEF2;
   font-size: 11px;
   letter-spacing: 1px;
-  
 }
 
 .topbar-logo {
@@ -106,7 +75,7 @@ h1 {
 
 @keyframes rotation {
   from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  to   { transform: rotate(360deg); }
 }
 
 .topbar-nav {
@@ -141,23 +110,38 @@ h1 {
 }
 
 /* =====================
-   TYPOGRAPHIE
+   BASE
    ===================== */
 
-.titre {
-  color: #FCB101;
-  letter-spacing: 6px;
+body {
+  background-color: #040506;
+  color: aliceblue;
+  font-family: Inter, system-ui, sans-serif;
+  font-weight: 200;
 }
 
-.motto1 {
+h2 {
   text-align: center;
-  font-weight: 400;
+}
+
+/* =====================
+   LAYOUT
+   ===================== */
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 48px 18px;
+  padding-top: 90px;
+  text-align: center;
 }
 
 
-.quote1 {
-  font-style: italic;
-  color: #FCB101;
+
+.cards-container2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
 /* =====================
@@ -165,13 +149,13 @@ h1 {
    ===================== */
 
 .card {
-  background-color: #040506;
+  background: #040506;
   border: 1px solid #474747;
-  border-radius: 12px;
-  padding: 20px;
   color: #E8EEF2;
-  margin: 20px auto;
-  max-width: 700px;
+  border-radius: 15px;
+  padding: 20px;
+  flex: 1;
+  transition: 0.2s;
 }
 
 .card p {
@@ -180,103 +164,61 @@ h1 {
   line-height: 1.6;
 }
 
-.cardmotto {
+.card:hover {
+  transform: translateY(-3px);
   border-color: #FCB101;
 }
-.cardinfo {
-  border-color: #48ff00;
+
+.status-bar {
+  border: 1px solid #474747;
+  background: transparent;
+  padding: 14px 16px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 28px;
+  border-radius: 15px;
 }
+
+.status-bar span {
+  display: block;
+}
+
+.status-bar .label {
+  color: #7c8088;
+  font-size: 11px;
+  margin-bottom: 4px;
+}
+
+.status-bar .value {
+  color: #e8eef2;
+  font-size: 11px;
+}
+
 
 /* =====================
    TEXTES / DESCRIPTIONS
    ===================== */
 
-.description1 {
-  text-align: justify;
-  max-width: 800px;
-  margin: auto;
-  line-height: 1.6;
-  color: #E8EEF2;
-}
-
-
-/* =====================
-   Universes page
-
-   ===================== */
-
-
-    /* =====================
-   CHARTS CONTAINER
-   ===================== */
-    .chart-container{
-      width: 100%;
-      max-width: 900px;
-      height: 450px;
-      margin: 0 auto;
-    }
-
-    .UNIWLCM {
-      color: #E8EEF2;
-    }
-
 hr {
-    border: none;
-    border-top: 1px solid #FCB101; /* couleur et épaisseur */
-    width: 80%;                     /* largeur */
-    margin: 40px auto;              /* espacement centré */
+  border: none;
+  border-top: 2px solid #FCB101;
+  width: 100%;
+  margin: 40px auto;
 }
 
-.warningcard {
-  color: #FF0000;
-  border-color: #FF0000;
-}
 
-a {
+
+
+.title {
   color: #FCB101;
-  text-decoration: none;
+  letter-spacing: 6px;
 }
 
-a:visited {
-  color: #d89a00;
+.directive {
+  opacity: 60%;
 }
 
-a:hover {
-  color: #E8EEF2;
-}
-
-a:active {
-  color: #E8EEF2;
-}
-
-.info {
-  color: #48ff00;
-}
-
-button {
-  background-color: #040506;
-  border: 1px solid #474747;
-  border-radius: 12px;
-  padding: 20px;
-  color: #E8EEF2;
-  margin: 20px auto;
-  max-width: 700px;
-}
-
-.button_index {
-  color: #E8EEF2;
-}
-.linkscp {
-  color: #E8EEF2;
-  text-decoration: none;
-}
-
-.linkscp:visited {
-  color: #E8EEF2;
-}
-.linkscp:hover {
-  color: #E8EEF2;
-}
-.linkscp:active {
-  color: #E8EEF2;
+.status {
+  color: #48ff00 ;
 }
