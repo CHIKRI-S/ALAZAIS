@@ -41,7 +41,7 @@
   display: block;
   width: 25px;
   height: 2px;
-  background-color: #E8EEF2;
+  background-color: #ffffff;
   border-radius: 2px;
 }
 
@@ -61,7 +61,7 @@
 }
 
 .topbar-motto {
-  color: #E8EEF2;
+  color: #ffffff;
   font-size: 11px;
   letter-spacing: 1px;
 }
@@ -96,7 +96,7 @@
 }
 
 .topbar-nav a {
-  color: #E8EEF2;
+  color: #ffffff;
   text-decoration: none;
   font-size: 13px;
   letter-spacing: 1px;
@@ -115,7 +115,7 @@
 
 body {
   background-color: #040506;
-  color: aliceblue;
+  color: #ffffff;
   font-family: Inter, system-ui, sans-serif;
   font-weight: 200;
 }
@@ -151,22 +151,33 @@ h2 {
 .card {
   background: #040506;
   border: 1px solid #474747;
-  color: #E8EEF2;
+  color: #ffffff;
   border-radius: 15px;
   padding: 20px;
   flex: 1;
   transition: 0.2s;
 }
 
-.card p {
+.card2 {
+  background: #040506;
+  border: 1px solid #474747;
+  color: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  flex: 1;
+  transition: 0.2s;
+}
+
+.card2 p {
   margin: 10px 0;
   text-align: left;
   line-height: 1.6;
 }
 
-.card:hover {
+.card2:hover {
   transform: translateY(-3px);
   border-color: #FCB101;
+  
 }
 
 .status-bar {
@@ -191,7 +202,7 @@ h2 {
 }
 
 .status-bar .value {
-  color: #e8eef2;
+  color: #ffffff;
   font-size: 11px;
 }
 
@@ -221,4 +232,35 @@ hr {
 
 .status {
   color: #48ff00 ;
+}
+
+a {
+  color:#ffffff;
+  text-decoration: none;
+}
+
+a:active {
+  color:#ffffff
+}
+
+a:visited {
+  color: #ffffff;
+}
+
+.colored-link {
+  color: #FCB101;
+}
+.colored-link:active {
+  color:#ffffff;
+}
+.colored-link:visited {
+  color:#FCB101;
+}
+.colored-link:hover {
+  color: #ffffff;
+}
+
+.warningcard {
+  color: red;
+  border-color: red;
 }
