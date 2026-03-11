@@ -264,3 +264,10 @@ a:visited {
   color: red;
   border-color: red;
 }
+
+.info {
+  color: #48ff00;
+}
+.cardinfo {
+  border-color: #48ff00;
+}
