@@ -41,7 +41,7 @@
   display: block;
   width: 25px;
   height: 2px;
-  background-color: #ffffff;
+  background-color: #E8EEF2;
   border-radius: 2px;
 }
 
@@ -54,14 +54,15 @@
 
 .topbar-title {
   color: #FCB101;
-  letter-spacing: 6px;
+  letter-spacing: 7px;
   font-weight: 600;
   font-size: 14px;
   text-transform: uppercase;
+  font-family: "Arial Black", Arial, sans-serif;
 }
 
 .topbar-motto {
-  color: #ffffff;
+  color: #E8EEF2;
   font-size: 11px;
   letter-spacing: 1px;
 }
@@ -96,7 +97,7 @@
 }
 
 .topbar-nav a {
-  color: #ffffff;
+  color: #E8EEF2;
   text-decoration: none;
   font-size: 13px;
   letter-spacing: 1px;
@@ -115,10 +116,11 @@
 
 body {
   background-color: #040506;
-  color: #ffffff;
-  font-family: Inter, system-ui, sans-serif;
+  color: aliceblue;
+  font-family: Arial, sans-serif;;
   font-weight: 200;
 }
+.title 
 
 h2 {
   text-align: center;
@@ -151,33 +153,22 @@ h2 {
 .card {
   background: #040506;
   border: 1px solid #474747;
-  color: #ffffff;
-  border-radius: 15px;
-  padding: 15px;
-  flex: 1;
-  transition: 0.2s;
-}
-
-.card2 {
-  background: #040506;
-  border: 1px solid #474747;
-  color: #ffffff;
+  color: #E8EEF2;
   border-radius: 15px;
   padding: 20px;
   flex: 1;
   transition: 0.2s;
 }
 
-.card2 p {
+.card p {
   margin: 10px 0;
   text-align: left;
   line-height: 1.6;
 }
 
-.card2:hover {
+.card:hover {
   transform: translateY(-3px);
   border-color: #FCB101;
-  
 }
 
 .status-bar {
@@ -202,7 +193,7 @@ h2 {
 }
 
 .status-bar .value {
-  color: #ffffff;
+  color: #e8eef2;
   font-size: 11px;
 }
 
@@ -218,12 +209,28 @@ hr {
   margin: 40px auto;
 }
 
+a {
+  color: #FCB101;
+  text-decoration: none;
+}
 
+a:visited {
+  color: #d89a00;
+}
+
+a:hover {
+  color: #E8EEF2;
+}
+
+a:active {
+  color: #E8EEF2;
+}
 
 
 .title {
   color: #FCB101;
-  letter-spacing: 6px;
+  letter-spacing: 7px;
+  font-family: "Arial Black", Arial, sans-serif;;
 }
 
 .directive {
@@ -234,44 +241,3 @@ hr {
   color: #48ff00 ;
 }
 
-a {
-  color:#ffffff;
-  text-decoration: none;
-}
-
-a:active {
-  color:#ffffff
-}
-
-a:visited {
-  color: #ffffff;
-}
-
-.colored-link {
-  color: #FCB101;
-}
-.colored-link:active {
-  color:#ffffff;
-}
-.colored-link:visited {
-  color:#FCB101;
-}
-.colored-link:hover {
-  color: #ffffff;
-}
-
-.warningcard {
-  color: red;
-  border-color: red;
-}
-
-.info {
-  color: #48ff00;
-}
-.cardinfo {
-  border-color: #48ff00;
-}
-
-.sbttl {
-  color:#FCB101;
-}
