@@ -483,47 +483,47 @@ input[type="password"]:focus {
         padding: 10px;
     }
 
-    .TITLE {
-        font-size: 28px;
-        letter-spacing: 3px;
-        margin-top: 40px;
+    /* TOPBAR */
+    .logo-title0 {
+        height: 45px;
+    }
+    .topbar-logo {
+        width: 40px;
+        height: 40px;
+    }
+    .topbar-motto {
+        font-size: 0.5rem;
     }
 
-    .MOTTO {
-        font-size: 18px;
-        letter-spacing: 1px;
+    /* PARENT CONTAINER (info + carte connexion) */
+    .parent-container {
+        flex-direction: column;
+        gap: 20px;
     }
-
-    .logo-title {
+    .interactive-connexion-card {
         width: 100%;
+        box-sizing: border-box;
     }
 
+    /* GRIDS */
     .card-container0 {
         grid-template-columns: 1fr;
     }
-
     .card-container1 {
         grid-template-columns: 1fr 1fr;
     }
-
     .access-container {
         grid-template-columns: 1fr;
     }
 
-    .parent-container {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
-
+    /* MARGES */
     .connexion-card {
-        margin-top: 40px;
-        margin-bottom: 40px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 }
 
 @media (max-width: 480px) {
-
     .card-container1 {
         grid-template-columns: 1fr;
     }
