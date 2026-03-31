@@ -397,3 +397,135 @@ input[type="password"]:focus {
     color: #FCB101;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .TITLE {
+        font-size: 28px;
+        letter-spacing: 3px;
+        margin-top: 40px;
+    }
+
+    .MOTTO {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+
+    .logo-title {
+        width: 100%;
+    }
+
+    .card-container0 {
+        grid-template-columns: 1fr;
+    }
+
+    .card-container1 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .access-container {
+        grid-template-columns: 1fr;
+    }
+
+    .parent-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .connexion-card {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .card-container1 {
+        grid-template-columns: 1fr;
+    }
+}
+
