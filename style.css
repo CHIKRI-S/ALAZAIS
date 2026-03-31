@@ -495,37 +495,88 @@ input[type="password"]:focus {
         font-size: 0.5rem;
     }
 
-    /* PARENT CONTAINER (info + carte connexion) */
+    /* PARENT CONTAINER */
     .parent-container {
-        flex-direction: column;
-        gap: 20px;
+        flex-direction: row;  /* ← garde info + connexion sur la même ligne */
+        gap: 15px;
+        align-items: center;
+    }
+    .info-container {
+        flex: 1;
+    }
+    .info-lign {
+        font-size: 0.7rem;
+        margin: 3px 0;
     }
     .interactive-connexion-card {
-        width: 100%;
-        box-sizing: border-box;
+        flex-shrink: 0;
+        width: auto;
+        padding: 12px;
+        font-size: 0.8rem;
+    }
+    .interactive-connexion-card h2 {
+        font-size: 0.85rem;
+        margin: 0;
     }
 
     /* GRIDS */
     .card-container0 {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr; /* ← garde 2 colonnes */
     }
     .card-container1 {
         grid-template-columns: 1fr 1fr;
     }
     .access-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr 1fr; /* ← garde 3 colonnes */
+        font-size: 0.7rem;
+        padding: 10px;
+    }
+
+    /* CARDS plus compactes */
+    .interactive-card {
+        padding: 12px;
+        font-size: 0.8rem;
+    }
+    .interactive-card h3 {
+        font-size: 0.85rem;
+        margin: 5px 0;
+    }
+    .interactive-card p {
+        font-size: 0.75rem;
+    }
+
+    .interactive-card0 {
+        padding: 12px;
+    }
+    .interactive-card0 h3 {
+        font-size: 0.8rem;
+        margin: 5px 0;
+    }
+    .interactive-card0 p {
+        font-size: 0.75rem;
+    }
+
+    /* TITRES */
+    h1 {
+        font-size: 1.2rem;
+        margin: 15px 0;
     }
 
     /* MARGES */
     .connexion-card {
-        margin-top: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .access-container {
         margin-bottom: 30px;
     }
 }
 
 @media (max-width: 480px) {
     .card-container1 {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr; /* ← garde 2 colonnes même sur petit écran */
+    }
+    .card-container0 {
+        grid-template-columns: 1fr 1fr;
     }
 }
-
