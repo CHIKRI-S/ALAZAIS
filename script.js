@@ -70,39 +70,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
-
-// ============================================================
-// GRAPHIQUE - Univers découverts (Chart.js)
-// ============================================================
-
-document.addEventListener("DOMContentLoaded", () => {
-  const canvas = document.getElementById("universChart");
-  if (!canvas) return;
-
-  // Si Chart.js n'est pas chargé, on évite de crash
-  if (typeof Chart === "undefined") {
-    console.error("Chart.js n'est pas chargé (Chart is undefined).");
-    return;
-  }
-
-  new Chart(canvas, {
-    type: "line",
-    data: {
-      labels: ['1920','1930','1940','1950','1960','1980','2000','2015','2026'],
-      datasets: [{
-        label: "Discovered Universes",
-        data: [1,47,820,4320,9876,312540,8420115,243910554,1400200000],
-        borderColor: "#ECFD18",
-        backgroundColor: "rgba(236,253,24,0.2)",
-        tension: 0.3
-      }]
-    },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false, // IMPORTANT pour respecter la hauteur CSS
-      plugins: {
-        tooltip: { enabled: true }
-      }
-    }
-  });
-});
